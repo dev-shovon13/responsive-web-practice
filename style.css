@@ -39,7 +39,37 @@ hr{
 }
 /* nav bar */
 
-
+header{
+    background: #7f65f5;
+    padding: 20px 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img{
+height: 50px;
+cursor: pointer;
+}
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-left h3{
+    margin-left: 16px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.nav-right a{
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+}
+.nav-right img{
+    border-radius: 50%;
+}
 /* main */
 
 /* top players section */
