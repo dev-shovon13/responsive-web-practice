@@ -1,6 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Zen+Loop&family=Fredericka+the+Great&display=swap');
 
 /* common styles */
 
@@ -31,7 +31,7 @@ section{
     padding: 30px;
 }
 .section-title{
-    color: #562EFF;
+    color: #29435a;
     margin-bottom: 35px;
 }
 hr{
@@ -42,7 +42,8 @@ hr{
 
 header{
     /* background: #7f65f5e8; */
-    background: #001f3f88;
+    /* background: #001f3f88; */
+    background: #404C56;
     padding: 15px 0;
     /* position: sticky;
     top: 0; */
@@ -81,22 +82,49 @@ cursor: pointer;
 }
 /* main */
 
-/* top players section */
-.players{
+/* top background */
+
+.top-bg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.450), rgba(0, 0, 0, 0.450)),url("images/background/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    position: relative;
+    height: 370px;
+    font-family: 'Fredericka the Great', cursive;
+    background-attachment: fixed;
+}
+.bg-title{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 20px;
+    line-height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-transform: uppercase;
+}
+
+
+/* top developers section */
+.developers{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-row-gap: 30px;
 }
-.player{
+.developer{
     display: flex;
     align-items: center;
 }
-.player img{
+.developer img{
     height: 56px;
     width: 56px;
     border-radius: 50%;
 }
-.player-name{
+.developer-name{
     margin-left: 16px;
 }
 
@@ -112,6 +140,8 @@ cursor: pointer;
 .blog-thumbnail img{
     width: 225px;
     margin-right: 16px;
+    box-shadow: 0px 0px 10px -2px gray;
+    border-radius: 15px;
 }
 .blog-info{
     width: 40%;
@@ -187,7 +217,7 @@ cursor: pointer;
 /* footer section */
 
 footer{
-    background: rgba(1, 19, 27, 0.815);
+    background: #404C56;
     /* width: 75%; */
     margin: auto;
     padding: 30px 0;
@@ -210,7 +240,7 @@ media queries
     .mobile-menu{
         display: block;
     }
-    .players, .blogs, .courses{
+    .developers, .blogs, .courses{
         grid-template-columns: repeat(1,1fr);
     }
     .blog{
@@ -219,9 +249,15 @@ media queries
     }
     .blog-info{
         width: 100%;
+        text-align: center;
     }
     .section-title{
         text-align: center;
+    }
+    .bg-title{
+        font-size: 30px;
+        letter-spacing: 20px;
+        line-height: 60px;
     }
 
 }
@@ -229,7 +265,7 @@ media queries
 /* tablet devices */
 @media (min-width:768px) and (max-width:1023px ) {
 
-    .players, .courses{
+    .developers, .courses{
         grid-template-columns: repeat(2,1fr);
     }
     .blogs{
@@ -240,6 +276,11 @@ media queries
     }
     .section-title{
         text-align: center;
+    }
+    .bg-title{
+        font-size: 35px;
+        letter-spacing: 20px;
+        line-height: 60px;
     }
 
 }
