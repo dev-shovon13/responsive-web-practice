@@ -41,8 +41,9 @@ hr{
 /* nav bar */
 
 header{
-    background: #7f65f5e8;
-    padding: 20px 0;
+    /* background: #7f65f5e8; */
+    background: #001f3f88;
+    padding: 15px 0;
     /* position: sticky;
     top: 0; */
 }
